@@ -3,7 +3,7 @@
 /**
  * _myexit - exits the shell
  * @info: Structure containing potential arguments. Used to maintain
- *         constant function 
+ *         constant function
  * Return: exits with a given exit status
  *  (0) if info.argv[0] not "exit"
  */
@@ -11,7 +11,7 @@ int _myexit(info_t *info)
 {
 	int exitcheck;
 
-	if (info->argv[1]) 
+	if (info->argv[1])
 	{
 		exitcheck = _erratoi(info->argv[1]);
 		if (exitcheck == -1)
@@ -47,7 +47,7 @@ int _mycd(info_t *info)
 	{
 		dir = _getenv(info, "HOME=");
 		if (!dir)
-			chdir_ret = 
+			chdir_ret =
 				chdir((dir = _getenv(info, "PWD=")) ? dir : "/");
 		else
 			chdir_ret = chdir(dir);
@@ -81,7 +81,7 @@ int _mycd(info_t *info)
 /**
  * _myhelp - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
- *                 constant function 
+ *                 constant function
  * Return: Always 0
  */
 int _myhelp(info_t *info)
