@@ -204,7 +204,7 @@ int populate_environment_list(info_t *);
 /* envi2.c module */
 char **getEnvironmentVariable(info_t *);
 int unsetEnvironmentVariable(info_t *, char *);
-int _setenv (info_t *, char *, char *);
+int _setenv(info_t *, char *, char *);
 
 /* file_io_func.c */
 char *get_history_file(info_t *info);
