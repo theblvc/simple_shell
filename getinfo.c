@@ -13,7 +13,7 @@ void clearInfo(info_t *info)
 }
 
 /**
- * setInfo - Initializes the info_t structure with arguments and performs replacements.
+ * setInfo - Initialize the info_t structure with arg & perform replacement.
  * @info: Pointer to the info_t structure.
  * @av: Argument vector (array of strings).
  */

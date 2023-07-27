@@ -227,4 +227,11 @@ size_t print_list(const list_t *);
 list_t *node_starts_with(list_t *, char *, char);
 ssize_t get_node_index(list_t *, list_t *);
 
+/* chain.c */
+int replaceString(char **old, char *new)
+int replaceVariables(info_t *info)
+int replaceAliases(info_t *info)
+void checkChain(info_t *info, char *buf, size_t *p, size_t i, size_t len)
+int isChainDelimiter(info_t *info, char *buf, size_t *p)
+
 #endif
